@@ -19,3 +19,23 @@ Check new image in `vagrant box list`
 
 In order to start VM type `vagrant up` command.\
 You can connect to your VM using `vagrant ssh` command.
+---
+Проект помогает собрать актуальный образ CentOS Stream 8 с использованием последнего стабильного ядра из репозитория elrepo-kernel. Этот образ можно легко установить как виртуальную машину на VirtualBox с помощью Vagrant.
+
+## Подготовка
+Необходимо установить VirtualBox и Oracle VM VirtualBox Extension Pack, а также `packer` и `vagrant`. Репозитории с последними доступны в [зеркале](https://hashicorp-releases.yandexcloud.net/).
+
+## Пошаговое руководство
+Начните создавать образ с помощью Packer, используя приведенную ниже команду. Следуйте инструкциям в процессе установки.
+```shell
+vagrant box add centos8-kernel-ml centos-8-kernel-ml-x86_64-Minimal.box
+```
+После успешного завершения сборки вы найдете файл `centos-8-kernel-ml-x86_64-Minimal.box` в своем рабочем каталоге.
+Введите следующую команду, чтобы добавить его в Vagrant:
+```shell
+vagrant box add centos8-kernel-ml centos-8-kernel-ml-x86_64-Minimal.box
+```
+Проверьте наличие образа командой `vagrant box list`
+
+Чтобы запустить виртуальную машину, введите команду `vagrant up`.\
+Подключититесь к ВМ с помощью команды `vagrant ssh`.
