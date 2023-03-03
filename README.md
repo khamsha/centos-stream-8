@@ -30,7 +30,7 @@ You can connect to your VM using `vagrant ssh` command.
 ## Пошаговое руководство
 Начните создавать образ с помощью Packer, используя приведенную ниже команду. Следуйте инструкциям в процессе установки.
 ```shell
-vagrant box add centos8-kernel-ml centos-8-kernel-ml-x86_64-Minimal.box
+packer build centos.json
 ```
 После успешного завершения сборки вы найдете файл `centos-8-kernel-ml-x86_64-Minimal.box` в своем рабочем каталоге.
 Введите следующую команду, чтобы добавить его в Vagrant:
