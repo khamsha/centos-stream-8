@@ -6,7 +6,7 @@ You need VirtualBox and Oracle VM VirtualBox Extension Pack to be installed on a
 Also install `packer` and `vagrant` using your package manager or download repositories from the [mirror](https://hashicorp-releases.yandexcloud.net/).
 
 ## Step-by-step guide
-Start building an image with Packer using the command below. Follow instructions during installation process.
+Start building an image with Packer using the command below:
 ```shell
 packer build centos.json
 ```
@@ -28,7 +28,7 @@ You can connect to your VM using `vagrant ssh` command.
 Необходимо установить VirtualBox и Oracle VM VirtualBox Extension Pack, а также `packer` и `vagrant`. Репозитории с последними доступны в [зеркале](https://hashicorp-releases.yandexcloud.net/).
 
 ## Пошаговое руководство
-Начните создавать образ с помощью Packer, используя приведенную ниже команду. Следуйте инструкциям в процессе установки.
+Начните создавать образ с помощью Packer, используя приведенную ниже команду:
 ```shell
 packer build centos.json
 ```
